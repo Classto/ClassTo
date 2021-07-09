@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 body{
     overflow: hidden;
     height: 100%;
@@ -59,7 +61,8 @@ a{
     width: 815px;
     height: 275px;
     text-align: left;
-    font: normal normal 900 85px Noto Sans KR;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
     letter-spacing: 1px;
     color: #33353e;
     animation: m_title_enable 2s;
@@ -67,7 +70,7 @@ a{
 
 #m_icon_div{
     position: relative;
-    top: -145px;
+    top: -155px;
     left: 1040px;
     animation: m_icon_enable 2s;
 }
