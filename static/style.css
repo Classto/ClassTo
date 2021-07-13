@@ -3,6 +3,10 @@ body{
     height: 100%;
 }
 
+a{
+    text-decoration-line: none;
+}
+
 #m_get_bell{
     z-index: 2;
     position: fixed;
@@ -47,6 +51,28 @@ body{
     font-size: 20px;
 }
 
+@keyframes m_title_enable{
+    from{
+        opacity: 0;
+        top: 195px;
+    }
+    to{
+        opacity: 1;
+        top: 210px;
+    }
+}
+
+@keyframes m_icon_enable{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* index.html */
+
 #m_title{
     position: relative;
     top: 210px;
@@ -86,7 +112,7 @@ body{
 
 #m_get_start{
     position: relative;
-    top: -265px;
+    top: -264px;
     left: 205px;
     width: 240px;
     height: 64px;
@@ -167,22 +193,36 @@ body{
     animation: m_icon_enable 2s;
 }
 
-@keyframes m_title_enable{
-    from{
-        opacity: 0;
-        top: 195px;
-    }
-    to{
-        opacity: 1;
-        top: 210px;
-    }
+/* editor.html */
+
+#e_back_i{
+    position: relative;
+    top: 17px;
+    left: 24px;
+    width: 21px;
+    height: 30px;
+    color: #327DFF;
+    transition: all 150ms linear;
+    opacity: 1;
 }
 
-@keyframes m_icon_enable{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+#e_back_p{
+    position: relative;
+    top: -61px;
+    left: 64px;
+    width: 331px;
+    height: 57px;
+    text-align: left;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 35px;
+    font-weight:900;
+    letter-spacing: 0px;
+    color: #327DFF;
+    transition: all 150ms linear;
+    opacity: 1;
+}
+
+#e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
+    color: #4688ff;
+    transform: translateX(-5px);
 }
