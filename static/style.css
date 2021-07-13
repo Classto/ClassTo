@@ -64,7 +64,7 @@ body{
 
 #m_icon_div{
     position: relative;
-    top: -145px;
+    top: -160px;
     left: 1040px;
     animation: m_icon_enable 2s;
 }
