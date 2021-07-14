@@ -162,7 +162,7 @@ p::selection, h1::selection{
 }
 
 #m_get_start:active{
-    background: #2e6bd5;
+    background: #2158b8;
 }
 
 #m_get_github:active{
@@ -199,31 +199,19 @@ p::selection, h1::selection{
 
 /* editor.html */
 
-#e_panel{
-    position: relative;
-    background-color: #327dff;
-    margin-top: 2vh;
-    border-radius: 0 2rem 0 0;
-    width: 20vw;
-    height: 100vh;
-    box-shadow: 0 6px 25px rgb(50, 125, 255, 0.7);
-    animation: e_pnl_enable 1s;
-    transition: all 150ms linear;
-}
-
 #e_back_i{
-    margin-top: 1.5vh;
-    margin-left: 1vw;
+    margin-top: 2.5vh;
+    margin-left: 1.25vw;
     width: 21px;
     height: 30px;
-    color: #ffffff;
+    color: #327DFF;
     font-size: 24px;
     transition: all 150ms linear;
     opacity: 1;
 }
 
 #e_back_p{
-    margin-top: -3.775vh;
+    margin-top: -3.75vh;
     margin-left: 3vw;
     width: 331px;
     height: 57px;
@@ -231,17 +219,17 @@ p::selection, h1::selection{
     font-family: 'Barlow', sans-serif;
     font-size: 26px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #327DFF;
     transition: all 150ms linear;
     opacity: 1;
 }
 
 #e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
-    color: #efefef;
+    color: #4688ff;
 }
 
 #e_back:active > #e_back_i, #e_back:active > #e_back_p{
-    color: #d7d7d7;
+    color: #2158b8;
 }
 
 #e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
