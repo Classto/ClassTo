@@ -1,18 +1,11 @@
 window.onload = () => {
     let spl = document.location.href.split('/');
-    if(spl[spl.length - 1] === 'editor.html'){
-        let today = new Date();
-        
-        let y = today.getFullYear();
-        let m = today.getMonth() + 1;
-        let d = today.getDate();
-
-        if(m.toString().length == 1)
-            m = '0' + m;
-        if(d.toString().length == 1)
-            d = '0' + d;
-    
-        document.getElementById('date_pnl').setAttribute('value', y + '-' + m + '-' + d);
+    if(spl[spl.length - 1] == 'editor.html'){
+        let dname_div = document.createElement('button');
+        dname_div.style.backgroundColor = 'red';
+        dname_div.style.width = '20px';
+        dname_div.style.height = '20px';
+        document.getElementById('e_panel').appendChild(dname_div);
     }
     else{
         document.getElementById('m_title').opacity = 0;

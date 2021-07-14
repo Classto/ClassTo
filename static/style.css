@@ -8,6 +8,10 @@ a{
     text-decoration-line: none;
 }
 
+p::selection, h1::selection{
+    color: #b9d3ff;
+}
+
 #m_get_bell{
     z-index: 2;
     position: fixed;
@@ -195,15 +199,16 @@ a{
 
 /* editor.html */
 
-#panel{
+#e_panel{
     position: relative;
     background-color: #327dff;
-    margin-top: 10px;
+    margin-top: 2vh;
     border-radius: 0 2rem 0 0;
     width: 20vw;
     height: 100vh;
     box-shadow: 0 6px 25px rgb(50, 125, 255, 0.7);
-    animation: e_pnl_enable 1.5s;
+    animation: e_pnl_enable 1s;
+    transition: all 150ms linear;
 }
 
 #e_back_i{
@@ -229,6 +234,14 @@ a{
     color: #ffffff;
     transition: all 150ms linear;
     opacity: 1;
+}
+
+#e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
+    color: #efefef;
+}
+
+#e_back:active > #e_back_i, #e_back:active > #e_back_p{
+    color: #d7d7d7;
 }
 
 #e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
