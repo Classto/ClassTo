@@ -1,2 +1,2 @@
 # ZoomScheduler
-Add, Edit, Delete Your Zoom Schedules
+> Add, Edit, Delete Your Zoom Schedules
