@@ -202,20 +202,20 @@ a{
     width: 21px;
     height: 30px;
     color: #327DFF;
+    font-size: 24px;
     transition: all 150ms linear;
     opacity: 1;
 }
 
 #e_back_p{
     position: relative;
-    top: -61px;
-    left: 64px;
+    top: -47px;
+    left: 55px;
     width: 331px;
     height: 57px;
     text-align: left;
     font-family: 'Catamaran', sans-serif;
-    font-size: 35px;
-    font-weight:900;
+    font-size: 26px;
     letter-spacing: 0px;
     color: #327DFF;
     transition: all 150ms linear;
