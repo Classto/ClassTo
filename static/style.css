@@ -48,8 +48,8 @@ p::selection, h1::selection {
 }
 
 #copyright {
-    position: relative;
-    top: -35px;
+    position: absolute;
+    top: 95vh;
     left: 545px;
     width: 595px;
     height: 36px;
