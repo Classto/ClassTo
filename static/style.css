@@ -272,3 +272,8 @@ p::selection, h1::selection{
     opacity: 1;
     border-radius: 1rem;
 }
+
+#e_schs{
+    position: relative;
+    top: 50px;
+}
