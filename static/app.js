@@ -1,7 +1,10 @@
+var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 window.onload = () => {
     let spl = document.location.href.split('/');
     if(spl[spl.length - 1] == 'editor.html'){
-        
+        let today = new Date();
+        document.getElementById('e_date').innerText = months[today.getMonth()] + ' ' + today.getDate() + '. ' + today.getFullYear();
     }
     else{
         document.getElementById('m_title').opacity = 0;

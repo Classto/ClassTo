@@ -241,11 +241,16 @@ p::selection, h1::selection{
     transform: translateX(-5px);
 }
 
+#e_date_div{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -10vh;
+    height: 15vh;
+}
+
 #e_date{
     position: relative;
-    top: -50px;
-    left: 575px;
-    width: 554px;
+    width: 110vh;
     height: 145px;
     text-align: center;
     font-family: 'Barlow', sans-serif;
@@ -258,7 +263,7 @@ p::selection, h1::selection{
 
 #e_br{
     position: relative;
-    top: -120px;
+    top: -80px;
     left: 0px;
     width: 400px;
     height: 2px;
