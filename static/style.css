@@ -1,19 +1,19 @@
-body{
+body {
     overflow: hidden;
     height: 100%;
     margin: 0;
 }
 
-a{
+a {
     text-decoration-line: none;
 }
 
-p::selection, h1::selection{
+p::selection, h1::selection {
     color: #ffffff;
     background-color: #33353E;
 }
 
-#m_get_bell{
+#m_get_bell {
     z-index: 2;
     position: fixed;
     top: 20px;
@@ -29,26 +29,26 @@ p::selection, h1::selection{
     animation: m_icon_enable 2s;
 }
 
-#m_get_bell:hover > i{
+#m_get_bell:hover > i {
     color: #efefef;
 }
 
-#m_get_bell:active{
+#m_get_bell:active {
     background: #2158b8;
 }
 
-#m_get_bell:active > i{
+#m_get_bell:active > i {
     color: #d4d4d4;
 }
 
-#m_get_bell_icon{
+#m_get_bell_icon {
     position: relative;
     color: #ffffff;
     opacity: 1;
     font-size: 20px;
 }
 
-#copyright{
+#copyright {
     position: relative;
     top: -35px;
     left: 545px;
@@ -62,7 +62,7 @@ p::selection, h1::selection{
     animation: m_icon_enable 2s;
 }
 
-@keyframes m_title_enable{
+@keyframes m_title_enable {
     from{
         opacity: 0;
         top: 195px;
@@ -73,7 +73,7 @@ p::selection, h1::selection{
     }
 }
 
-@keyframes m_icon_enable{
+@keyframes m_icon_enable {
     from{
         opacity: 0;
     }
@@ -82,7 +82,7 @@ p::selection, h1::selection{
     }
 }
 
-@keyframes e_pnl_enable{
+@keyframes e_pnl_enable {
     from{
         left: -25vw;
     }
@@ -93,7 +93,7 @@ p::selection, h1::selection{
 
 /* index.html */
 
-#m_title{
+#m_title {
     position: relative;
     top: 211px;
     left: 190px;
@@ -108,14 +108,14 @@ p::selection, h1::selection{
     animation: m_title_enable 2s;
 }
 
-#m_icon_div{
+#m_icon_div {
     position: relative;
     top: -160px;
     left: 1040px;
     animation: m_icon_enable 2s;
 }
 
-#m_get_github{
+#m_get_github {
     position: relative;
     top: -281px;
     left: 190px;
@@ -130,7 +130,7 @@ p::selection, h1::selection{
     animation: m_icon_enable 2s;
 }
 
-#m_get_start{
+#m_get_start {
     position: relative;
     top: -264px;
     left: 205px;
@@ -145,28 +145,28 @@ p::selection, h1::selection{
     animation: m_icon_enable 2s;
 }
 
-#m_get_start_text, #m_get_start_icon{
+#m_get_start_text, #m_get_start_icon {
     transition: all 150ms linear;
 }
 
-#m_get_start:hover{
+#m_get_start:hover {
     background: #4688ff;
     width: 250px;
 }
 
-#m_get_github:hover{
+#m_get_github:hover {
     background: #efefef;
 }
 
-#m_get_start:hover > i{
+#m_get_start:hover > i {
    transform: translate(10px, -20px);
 }
 
-#m_get_start:active{
+#m_get_start:active {
     background: #2158b8;
 }
 
-#m_get_github:active{
+#m_get_github:active {
     background: #d7d7d7;
 }
 
@@ -174,7 +174,7 @@ p::selection, h1::selection{
     color: #c2c2c2;
 }
 
-#m_get_start_text{
+#m_get_start_text {
     position: relative;
     top: -20px;
     left: 0px;
@@ -188,7 +188,7 @@ p::selection, h1::selection{
     opacity: 1;
 }
 
-#m_get_start_icon{
+#m_get_start_icon {
     position: relative;
     top:50%;
     transform:translateY(-50%);
@@ -200,7 +200,7 @@ p::selection, h1::selection{
 
 /* editor.html */
 
-#e_back_i{
+#e_back_i {
     position: relative;
     margin-top: 2.5vh;
     margin-left: 1.25vw;
@@ -212,7 +212,7 @@ p::selection, h1::selection{
     opacity: 1;
 }
 
-#e_back_p{
+#e_back_p {
     position: relative;
     margin-top: 2.5vh;
     margin-left: 1.25vw;
@@ -229,26 +229,26 @@ p::selection, h1::selection{
     opacity: 1;
 }
 
-#e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
+#e_back:hover > #e_back_i, #e_back:hover > #e_back_p {
     color: #4688ff;
 }
 
-#e_back:active > #e_back_i, #e_back:active > #e_back_p{
+#e_back:active > #e_back_i, #e_back:active > #e_back_p {
     color: #2158b8;
 }
 
-#e_back:hover > #e_back_i, #e_back:hover > #e_back_p{
+#e_back:hover > #e_back_i, #e_back:hover > #e_back_p {
     transform: translateX(-5px);
 }
 
-#e_date_div{
+#e_date_div {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: -10vh;
     height: 15vh;
 }
 
-#e_date{
+#e_date {
     position: relative;
     width: 110vh;
     height: 145px;
@@ -261,7 +261,7 @@ p::selection, h1::selection{
     opacity: 1;
 }
 
-#e_br{
+#e_br {
     position: relative;
     top: -80px;
     left: 0px;
@@ -273,7 +273,7 @@ p::selection, h1::selection{
     border-radius: 1rem;
 }
 
-#e_schs{
+#e_schs {
     position: relative;
     top: 50px;
 }
