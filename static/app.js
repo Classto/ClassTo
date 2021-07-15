@@ -8,24 +8,25 @@ window.onload = () => {
     document.getElementById('e_date').innerText = months[today.getMonth()] + ' ' + today.getDate() + '. ' + today.getFullYear();
       
     for (let i = 0; i < 14; i++) {
-      var sample = document.createElement('div');
-      sample.style.setProperty('background-color', '#FEFEFE 0% 0% no-repeat padding-box');
-      sample.style.setProperty('box-shadow', '0px 5px 25px #327DFF40');
+      var sample = document.createElement('button');
+      sample.style.setProperty('background-color', '#FEFEFE');
+      sample.style.setProperty('box-shadow', '0px 4px 25px #327DFF40');
       sample.style.setProperty('position', 'absolute');
       sample.style.setProperty('width', '100%');
       sample.style.setProperty('height', '22vh');
       sample.style.setProperty('top', top_pos + 'vh');
       sample.style.setProperty('border-radius', '1.5vw');
+      sample.style.setProperty('border', 'none');
 
       if (i%3 === 0) {
         sample.style.setProperty('width', '30%');
-        sample.style.setProperty('margin-left', '3%');
+        sample.style.setProperty('margin-left', '2%');
       } else if (i%3 === 1) {
         sample.style.setProperty('width', '30%');
         sample.style.setProperty('margin-left', '35%');
       } else {
         sample.style.setProperty('width', '30%');
-        sample.style.setProperty('margin-left', '67%');
+        sample.style.setProperty('margin-left', '68%');
         top_pos += 25;
       }
 
