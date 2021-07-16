@@ -121,7 +121,7 @@ p::selection, h1::selection {
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 70px;
     letter-spacing: -2.5px;
     color: #33353E;
     opacity: 1;
@@ -129,7 +129,7 @@ p::selection, h1::selection {
 
 #e_hr {
     position: relative;
-    top: -80px;
+    top: -90px;
     left: 0px;
     width: 400px;
     height: 2px;
