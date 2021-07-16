@@ -10,16 +10,18 @@ window.onload = () => {
       
     for (i = 0; i < 14; i++) {
       var sample = document.createElement('button');
+      var sample_text = document.createElement('p');
+      sample_text.innerText = 'Title';
 
-      sample.addEventListener('mouseover', function(event) {
-        event.target.style.setProperty('background-color', '#f4f4f4');
-      });
-      sample.addEventListener('mouseout', function(event) {
-        event.target.style.setProperty('background-color', '#FEFEFE');
-      });
-      sample.addEventListener('mousedown', function(event) {
-        event.target.style.setProperty('background-color', '#f0f0f0');
-      });
+      sample_text.style.setProperty('font-size', '4vh');
+      sample_text.style.setProperty('color', '#53555c');
+      sample_text.style.setProperty('font-family', '\'Barlow\', sans-serif');
+      sample_text.style.setProperty('position', 'absolute');
+      sample_text.style.setProperty('text-align', 'center');
+      sample_text.style.setProperty('top', '-2vh');
+      sample_text.style.setProperty('left', '50%');
+      sample_text.style.setProperty('transform', 'translateX(-50%)');
+      sample_text.style.setProperty('background-color', 'rgba(0, 0, 0, 0)');
       
       sample.style.setProperty('transition', 'all 150ms linear')
       sample.style.setProperty('background-color', '#FEFEFE');
@@ -43,6 +45,7 @@ window.onload = () => {
       }
 
       document.getElementById('e_schs').appendChild(sample);
+      sample.appendChild(sample_text);
       document.getElementById('e_schs').style.setProperty('height', i * 9.25 - 3 + 'vh');
     }
   } else {
