@@ -10,8 +10,20 @@ window.onload = () => {
       
     for (i = 0; i < 14; i++) {
       var sample = document.createElement('button');
+
+      sample.addEventListener('mouseover', function(event) {
+        event.target.style.setProperty('background-color', '#f4f4f4');
+      });
+      sample.addEventListener('mouseout', function(event) {
+        event.target.style.setProperty('background-color', '#FEFEFE');
+      });
+      sample.addEventListener('mousedown', function(event) {
+        event.target.style.setProperty('background-color', '#f0f0f0');
+      });
+      
+      sample.style.setProperty('transition', 'all 150ms linear')
       sample.style.setProperty('background-color', '#FEFEFE');
-      sample.style.setProperty('box-shadow', '0px 4px 25px #327DFF40');
+      sample.style.setProperty('box-shadow', '0px 4px 25px #327DFF45');
       sample.style.setProperty('position', 'absolute');
       sample.style.setProperty('height', '18vh');
       sample.style.setProperty('top', top_pos + 'vh');
@@ -31,7 +43,7 @@ window.onload = () => {
       }
 
       document.getElementById('e_schs').appendChild(sample);
-      document.getElementById('e_schs').style.setProperty('height', i*11 - 3 + 'vh');
+      document.getElementById('e_schs').style.setProperty('height', i * 9.25 - 3 + 'vh');
     }
   } else {
     document.getElementById('m_title').opacity = 0;
