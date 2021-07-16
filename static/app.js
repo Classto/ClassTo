@@ -13,7 +13,7 @@ window.onload = () => {
       var sample_text = document.createElement('p');
       var sample_hr = document.createElement('hr');
 
-      sample_text.innerText = 'This is very very loooooooongggggg';
+      sample_text.innerText = 'Title';
       sample_hr.id = 'sample_hr';
 
       var len = sample_text.innerHTML.length;
@@ -25,6 +25,7 @@ window.onload = () => {
       }
       sample_text.style.setProperty('color', '#53555c');
       sample_text.style.setProperty('font-family', '\'Barlow\', sans-serif');
+      sample_text.style.setProperty('font-weight', 'bold');
 
       sample_text.style.setProperty('position', 'absolute');
       sample_text.style.setProperty('text-align', 'center');

@@ -245,6 +245,11 @@ p::selection, h1::selection {
     margin-right: 20%;
     margin-top: -10vh;
     height: 15vh;
+    -ms-user-select:none;
+    -moz-user-select:-moz-none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
 }
 
 #e_date {
