@@ -13,15 +13,15 @@ window.onload = () => {
       var sample_text = document.createElement('p');
       var sample_hr = document.createElement('hr');
 
-      sample_text.innerText = '와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나';
+      sample_text.innerText = 'This is very very loooooooongggggg';
       sample_hr.id = 'sample_hr';
 
       var len = sample_text.innerHTML.length;
 
       if(len <= 18) {
-        sample_text.style.setProperty('font-size', '3vh');
+        sample_text.style.setProperty('font-size', '3.5vh');
       } else {
-        sample_text.style.setProperty('font-size', 54 / len + 'vh');
+        sample_text.style.setProperty('font-size', 70 / len + 'vh');
       }
       sample_text.style.setProperty('color', '#53555c');
       sample_text.style.setProperty('font-family', '\'Barlow\', sans-serif');
