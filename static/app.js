@@ -11,15 +11,27 @@ window.onload = () => {
     for (i = 0; i < 14; i++) {
       var sample = document.createElement('button');
       var sample_text = document.createElement('p');
-      sample_text.innerText = 'Title';
+      var sample_hr = document.createElement('hr');
 
-      sample_text.style.setProperty('font-size', '4vh');
+      sample_text.innerText = '와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나와샌즈언더테일아시는구나';
+      sample_hr.id = 'sample_hr';
+
+      var len = sample_text.innerHTML.length;
+
+      if(len <= 18) {
+        sample_text.style.setProperty('font-size', '3vh');
+      } else {
+        sample_text.style.setProperty('font-size', 54 / len + 'vh');
+      }
       sample_text.style.setProperty('color', '#53555c');
       sample_text.style.setProperty('font-family', '\'Barlow\', sans-serif');
+
       sample_text.style.setProperty('position', 'absolute');
       sample_text.style.setProperty('text-align', 'center');
-      sample_text.style.setProperty('top', '-2vh');
-      sample_text.style.setProperty('left', '50%');
+      sample_text.style.setProperty('width', '20vw');
+      sample_text.style.setProperty('height', '5vh');
+      sample_text.style.setProperty('bottom', '7vh');
+      sample_text.style.setProperty('left', '49%');
       sample_text.style.setProperty('transform', 'translateX(-50%)');
       sample_text.style.setProperty('background-color', 'rgba(0, 0, 0, 0)');
       
@@ -46,6 +58,7 @@ window.onload = () => {
 
       document.getElementById('e_schs').appendChild(sample);
       sample.appendChild(sample_text);
+      sample.appendChild(sample_hr);
       document.getElementById('e_schs').style.setProperty('height', i * 9.25 - 3 + 'vh');
     }
   } else {

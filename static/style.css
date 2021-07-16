@@ -260,7 +260,7 @@ p::selection, h1::selection {
     opacity: 1;
 }
 
-#e_br {
+#e_hr {
     position: relative;
     top: -80px;
     left: 0px;
@@ -275,4 +275,16 @@ p::selection, h1::selection {
 #e_schs {
     position: relative;
     top: 50px;
+}
+
+#sample_hr {
+    position: relative;
+    top: -1.5vh;
+    left: 0px;
+    width: 30%;
+    height: 2px;
+    border: 0;
+    background-color: #33353E35;
+    opacity: 1;
+    border-radius: 1rem;
 }
