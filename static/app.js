@@ -6,13 +6,3 @@ window.onload = () => {
   document.getElementById('copyright').opacity = 0;
   document.getElementById('m_get_bell').opacity = 0;
 }
-
-function changeIcon() {
-  let icon = document.getElementById('m_get_bell_icon');
-  
-  if (icon.className === 'far fa-bell') {
-    icon.className = 'far fa-bell-slash';
-  } else {
-    icon.className = 'far fa-bell';
-  }
-}
