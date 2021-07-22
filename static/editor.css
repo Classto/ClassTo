@@ -7,11 +7,6 @@ a {
     text-decoration-line: none;
 }
 
-p::selection, h1::selection {
-    color: #ffffff;
-    background-color: #33353E;
-}
-
 #m_get_bell {
     z-index: 2;
     position: fixed;
@@ -45,19 +40,6 @@ p::selection, h1::selection {
     color: #ffffff;
     opacity: 1;
     font-size: 20px;
-}
-
-#copyright {
-    position: absolute;
-    top: 95vh;
-    left: 545px;
-    width: 595px;
-    height: 36px;
-    text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    letter-spacing: 0px;
-    color: #33353e;
-    animation: m_icon_enable 2s;
 }
 
 #e_back_i {
