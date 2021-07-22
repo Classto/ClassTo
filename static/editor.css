@@ -83,6 +83,57 @@ a {
     transform: translateX(-5px);
 }
 
+#category {
+    position: absolute;
+    width: 90vw;
+    height: 5vh;
+    margin-top: -5vh;
+    margin-left: 5vw;
+}
+
+#category > p {
+    position: absolute;
+    height: 5vh;
+    left: 13.09%;
+    right: 12.41%;
+    margin-top: 5vh;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 51px;
+
+    color: #327DFF;
+}
+
+#category > i {
+    position: absolute;
+    height: 5vh;
+    left: 10.5%;
+    right: 0%;
+    margin-top: 5vh;
+
+    font-size: 27px;
+    line-height: 60px;
+
+    color: #327DFF;
+}
+
+#ct_hr {
+    position: absolute;
+    left: 14%;
+    right: 14%;
+    top: 20%;
+    bottom: 78.6%;
+    height: 0.2vh;
+
+    border: 0;
+    border-radius: 100rem;
+
+    background-color: #D6D7D8;
+}
+
 @keyframes m_title_enable {
     from{
         opacity: 0;
