@@ -58,7 +58,7 @@ a {
     position: absolute;
     width: 90vw;
     height: 5vh;
-    margin-top: -5vh;
+    margin-top: -4.5vh;
     margin-left: 14vw;
 }
 
@@ -74,7 +74,7 @@ a {
     font-size: 29px;
     line-height: 51px;
 
-    color: #327DFF;
+    color: #33353E;
 }
 
 #category > i {
@@ -83,10 +83,10 @@ a {
     left: 2px;
     margin-top: 5vh;
 
-    font-size: 27px;
+    font-size: 25px;
     line-height: 60px;
 
-    color: #327DFF;
+    color: #33353E;
 }
 
 #ct_hr {
@@ -101,6 +101,27 @@ a {
     border-radius: 100rem;
 
     background-color: #D6D7D8;
+}
+
+#add_btn {
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
+    width: 3.5em;
+    height: 3.5em;
+
+    border-radius: 30%;
+
+    background-color: #327DFF;
+    box-shadow: 0 6px 25px rgba(50, 125, 255, 0.45);
+}
+
+#add_btn > i {
+    line-height: 1.75em;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 2em;
 }
 
 @keyframes m_title_enable {
