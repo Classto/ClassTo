@@ -7,41 +7,6 @@ a {
     text-decoration-line: none;
 }
 
-#m_get_bell {
-    z-index: 2;
-    position: fixed;
-    margin-top: 2.75vh;
-    left: 1625px;
-    width: 40px;
-    height: 40px;
-    background: #327dff 0 0 no-repeat padding-box;
-    box-shadow: 0 10px 25px #327DFF59;
-    border-radius: 43px;
-    border: 0;
-    outline: 0;
-    transition: all 75ms linear;
-    animation: m_icon_enable 2s;
-}
-
-#m_get_bell:hover > i {
-    color: #efefef;
-}
-
-#m_get_bell:active {
-    background: #2158b8;
-}
-
-#m_get_bell:active > i {
-    color: #d4d4d4;
-}
-
-#m_get_bell_icon {
-    position: relative;
-    color: #ffffff;
-    opacity: 1;
-    font-size: 20px;
-}
-
 #e_back_i {
     position: relative;
     margin-top: 2.75vh;
