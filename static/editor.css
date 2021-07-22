@@ -58,14 +58,13 @@ a {
     width: 90vw;
     height: 5vh;
     margin-top: -5vh;
-    margin-left: 5vw;
+    margin-left: 14vw;
 }
 
 #category > p {
     position: absolute;
     height: 5vh;
-    left: 13.09%;
-    right: 12.41%;
+    left: 35px;
     margin-top: 5vh;
 
     font-family: Noto Sans KR;
@@ -80,8 +79,7 @@ a {
 #category > i {
     position: absolute;
     height: 5vh;
-    left: 10.5%;
-    right: 0%;
+    left: 2px;
     margin-top: 5vh;
 
     font-size: 27px;
@@ -94,8 +92,8 @@ a {
     position: absolute;
     left: 14%;
     right: 14%;
-    top: 20%;
     bottom: 78.6%;
+    top: 20%;
     height: 0.2vh;
 
     border: 0;
