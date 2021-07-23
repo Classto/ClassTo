@@ -166,6 +166,28 @@ a {
     top: 21%;
 }
 
+#ct_div > div {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    height: 160px;
+
+    background-color: red;
+}
+
+#ct_div > div > hr {
+    position: absolute;
+    left: -3%;
+    right: -3%;
+    top: 95%;
+    height: 0.2vh;
+
+    border: 0;
+    border-radius: 100rem;
+
+    background-color: #D6D7D8;
+}
+
 @keyframes m_title_enable {
     from{
         opacity: 0;
