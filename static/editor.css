@@ -158,7 +158,7 @@ a {
     height: 130%;
 }
 
-#ct_div {
+#sch_div {
     position: absolute;
     left: 14%;
     right: 14%;
@@ -166,7 +166,7 @@ a {
     top: 21%;
 }
 
-#ct_div > div {
+#sch_div > div {
     position: absolute;
     left: 3%;
     right: 3%;
@@ -175,7 +175,7 @@ a {
     background-color: red;
 }
 
-#ct_div > div > hr {
+#sch_div > div > hr {
     position: absolute;
     left: -3%;
     right: -3%;
@@ -186,6 +186,21 @@ a {
     border-radius: 100rem;
 
     background-color: #D6D7D8;
+}
+
+#sch_div > div > p {
+    position: absolute;
+    top: 10%;
+    bottom: 100%;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+
+    color: #33353E;
 }
 
 @keyframes m_title_enable {
