@@ -4,7 +4,6 @@ window.onload = function() {
 
   for(let count = 0; count < 5; count++) {
     createSch();
-    plus_pos += 126;
   }
 }
 
@@ -40,7 +39,7 @@ function createSch() {
   var time_i = document.createElement('i');
   time_i.id = 'time_i';
   time_i.className = 'fas fa-clock';
-  var time = document.createElement('p');
+  var time = document.createElement('span');
   time.id = 'time';
   time.innerText = '11:50 PM';
 
@@ -49,12 +48,12 @@ function createSch() {
   var name_i = document.createElement('i');
   name_i.id = 'name_i';
   name_i.className = 'fas fa-id-badge';
-  var name = document.createElement('p');
+  var name = document.createElement('span');
   name.id = 'name';
-  name.innerText = '닉네임';
+  name.innerText = 'nickname';
   var m_vl2 = document.createElement('div');
   m_vl2.id = 'm_vl2';
-  var id = document.createElement('p');
+  var id = document.createElement('span');
   id.id = 'id';
   id.innerText = '111 1111 1111';
 
@@ -78,4 +77,14 @@ function createSch() {
   sch_div.append(sch_hr);
 
   document.getElementById('sch_div').append(sch_div);
+
+  m_vl1.style.setProperty('left', parseInt(time.clientWidth + 1 ,10) + 38 + 'px');
+  name_i.style.setProperty('left', parseInt(time.clientWidth + 1 ,10) + 54 + 'px');
+  name.style.setProperty('left', parseInt(time.clientWidth + 1 ,10) + 80 + 'px');
+  m_vl2.style.setProperty('left', parseInt(name.clientWidth + 1 ,10) + parseInt(time.clientWidth + 1 ,10) + 90 + 'px');
+  id.style.setProperty('left', parseInt(name.clientWidth + 1 ,10) + parseInt(time.clientWidth + 1 ,10) + 103 + 'px');
+
+  plus_pos += 126;
 }
+
+document.getElementById('add_btn').addEventListener('click', createSch);

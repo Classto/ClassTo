@@ -16,9 +16,8 @@ a {
 #category {
     position: absolute;
     width: 90vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left: 14vw;
-    background-color: red;
 }
 
 #category > p {
@@ -53,7 +52,7 @@ a {
     left: 14%;
     right: 14%;
     bottom: 78.6%;
-    top: 20%;
+    top: 15%;
     height: 0.2vh;
 
     border: 0;
@@ -122,7 +121,7 @@ a {
     left: 14%;
     right: 14%;
     height: 250%;
-    top: 21%;
+    top: 16%;
 }
 
 #sch_div > div {
@@ -219,11 +218,11 @@ a {
 
 #time {
     position: absolute;
-    top: 63.5%;
+    top: 63%;
     bottom: 100%;
     left: 30px;
     margin-top: -7px;
-
+    width: auto;
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
@@ -238,7 +237,6 @@ a {
     height: 20px;
     top: 63%;
     bottom: 100%;
-    left: 135px;
     background-color: #D6D7D8;
 
     border-radius: 100rem;
@@ -257,11 +255,11 @@ a {
 
 #name {
     position: absolute;
-    top: 63.5%;
+    top: 63%;
     bottom: 100%;
     left: 175px;
     margin-top: -7px;
-
+    width: auto;
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
@@ -276,7 +274,6 @@ a {
     height: 20px;
     top: 63%;
     bottom: 100%;
-    left: 313px;
     background-color: #D6D7D8;
 
     border-radius: 100rem;
@@ -284,9 +281,8 @@ a {
 
 #id {
     position: absolute;
-    top: 63.5%;
+    top: 63%;
     bottom: 100%;
-    left: 325px;
     margin-top: -7px;
 
     font-family: Noto Sans KR;
