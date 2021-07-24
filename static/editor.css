@@ -170,16 +170,15 @@ a {
     position: absolute;
     left: 3%;
     right: 3%;
-    height: 160px;
-
-    background-color: red;
+    height: 125px;
+    display: flex;
 }
 
 #sch_div > div > hr {
     position: absolute;
     left: -3%;
     right: -3%;
-    top: 95%;
+    top: 93%;
     height: 0.2vh;
 
     border: 0;
@@ -188,19 +187,155 @@ a {
     background-color: #D6D7D8;
 }
 
-#sch_div > div > p {
+#sch_div > div > h1 {
     position: absolute;
-    top: 10%;
+    top: 13%;
     bottom: 100%;
 
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 34px;
     display: flex;
     align-items: center;
 
     color: #33353E;
+}
+
+#t_vl1 {
+    position: absolute;
+    width: 0.2vh;
+    height: 35px;
+    top: 19%;
+    bottom: 100%;
+    right: 115px;
+    background-color: #D6D7D8;
+
+    border-radius: 100rem;
+}
+
+#title_i1 {
+    position: absolute;
+    top: 21.4%;
+    bottom: 100%;
+    right: 65px;
+
+    font-size: 28px;
+
+    color: #327DFF;
+}
+
+#t_vl2 {
+    position: absolute;
+    width: 0.2vh;
+    height: 35px;
+    top: 19%;
+    bottom: 100%;
+    right: 47px;
+    background-color: #D6D7D8;
+
+    border-radius: 100rem;
+}
+
+#title_i2 {
+    position: absolute;
+    top: 21.4%;
+    bottom: 100%;
+    right: 0px;
+
+    font-size: 28px;
+
+    color: #327DFF;
+}
+
+#time_i {
+    position: absolute;
+    top: 63%;
+    bottom: 100%;
+
+    font-size: 21px;
+
+    color: #327DFF;
+}
+
+#time {
+    position: absolute;
+    top: 63%;
+    bottom: 100%;
+    left: 30px;
+    margin-top: -7px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+
+    color: #327DFF;
+}
+
+#m_vl1 {
+    position: absolute;
+    width: 0.2vh;
+    height: 20px;
+    top: 63%;
+    bottom: 100%;
+    left: 135px;
+    background-color: #D6D7D8;
+
+    border-radius: 100rem;
+}
+
+#name_i {
+    position: absolute;
+    top: 63%;
+    bottom: 100%;
+    left: 149px;
+
+    font-size: 21px;
+
+    color: #327DFF;
+}
+
+#name {
+    position: absolute;
+    top: 63%;
+    bottom: 100%;
+    left: 175px;
+    margin-top: -7px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+
+    color: #327DFF;
+}
+
+#m_vl2 {
+    position: absolute;
+    width: 0.2vh;
+    height: 20px;
+    top: 63%;
+    bottom: 100%;
+    left: 313px;
+    background-color: #D6D7D8;
+
+    border-radius: 100rem;
+}
+
+#id {
+    position: absolute;
+    top: 63%;
+    bottom: 100%;
+    left: 325px;
+    margin-top: -7px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+
+    color: #327DFF;
 }
 
 @keyframes m_title_enable {
