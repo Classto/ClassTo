@@ -91,7 +91,7 @@ a {
 
 #add_btn:hover {
     right: 2.915%;
-    bottom: 3.85%;
+    bottom: 3.9%;
     width: 3.65em;
     height: 3.65em;
 
@@ -120,7 +120,7 @@ a {
     position: absolute;
     left: 14%;
     right: 14%;
-    height: 250%;
+    height: auto;
     top: 16%;
 }
 

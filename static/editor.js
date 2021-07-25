@@ -5,6 +5,8 @@ window.onload = function() {
   for(let count = 0; count < 5; count++) {
     createSch();
   }
+
+  document.getElementById('add_btn').addEventListener('click', createSch);
 }
 
 function changeIcon() {
@@ -86,5 +88,3 @@ function createSch() {
 
   plus_pos += 126;
 }
-
-document.getElementById('add_btn').addEventListener('click', createSch);
