@@ -10,7 +10,10 @@ window.onload = function() {
     }
   }, 150);
 
-  document.getElementById('add_btn').addEventListener('click', createSch);
+  document.getElementById('add_btn').addEventListener('click', function() {
+    createSch();
+    window.scrollBy(0, 270 + plus_pos)
+  });
 }
 
 function changeIcon() {
