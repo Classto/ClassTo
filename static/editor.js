@@ -65,6 +65,8 @@ function createSch() {
 
   var sch_hr = document.createElement('hr');
 
+  document.getElementById('sch_div').style.setProperty('height', 273 + plus_pos + 'px');
+
   sch_div.append(sch_title);
 
   sch_div.append(t_vl1);
@@ -91,4 +93,6 @@ function createSch() {
   id.style.setProperty('left', parseInt(name.clientWidth + 1 ,10) + parseInt(time.clientWidth + 1 ,10) + 103 + 'px');
 
   plus_pos += 126;
+
+  window.scrollBy(0, 200);
 }
