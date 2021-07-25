@@ -1,10 +1,14 @@
 let plus_pos = 0;
+let sch_count = 0;
 
 window.onload = function() {
-
-  for(let count = 0; count < 5; count++) {
+  let interval = setInterval(function() {
+    sch_count++;
     createSch();
-  }
+    if (sch_count === 5) {
+      clearInterval(interval);
+    }
+  }, 150);
 
   document.getElementById('add_btn').addEventListener('click', createSch);
 }

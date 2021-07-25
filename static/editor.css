@@ -175,7 +175,7 @@ a {
 
     border-radius: 100rem;
 
-    animation: sch_fade 1s;
+    animation: vl_fade_t 1s;
 }
 
 #title_i1 {
@@ -202,7 +202,7 @@ a {
 
     border-radius: 100rem;
 
-    animation: sch_fade 1s;
+    animation: vl_fade_t 1s;
 }
 
 #title_i2 {
@@ -257,7 +257,7 @@ a {
 
     border-radius: 100rem;
 
-    animation: sch_fade 1s;
+    animation: vl_fade_m 1s;
 }
 
 #name_i {
@@ -300,7 +300,7 @@ a {
 
     border-radius: 100rem;
 
-    animation: sch_fade 1s;
+    animation: vl_fade_m 1s;
 }
 
 #id {
@@ -335,6 +335,26 @@ a {
         opacity: 0;
     } to {
         top: 116px;
+        opacity: 1;
+    }
+}
+
+@keyframes vl_fade_t {
+    from {
+        top: 75px;
+        opacity: 0;
+    } to {
+        top: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes vl_fade_m {
+    from {
+        top: 129px;
+        opacity: 0;
+    } to {
+        top: 79px;
         opacity: 1;
     }
 }
