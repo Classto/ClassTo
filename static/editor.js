@@ -12,7 +12,7 @@ window.onload = function() {
 
   document.getElementById('add_btn').addEventListener('click', function() {
     createSch();
-    window.scrollBy(0, 270 + plus_pos)
+    window.scrollBy(0, 270 + plus_pos);
   });
 }
 
@@ -31,7 +31,7 @@ function createSch() {
   sch_div.style.top = plus_pos + 'px';
 
   var sch_title = document.createElement('h1');
-  sch_title.innerText = "테스트용 임시 스캐줄!"
+  sch_title.innerText = 'Title';
 
   var t_vl1 = document.createElement('div');
   var t_vl2 = document.createElement('div');
@@ -96,4 +96,8 @@ function createSch() {
   id.style.setProperty('left', parseInt(name.clientWidth + 1 ,10) + parseInt(time.clientWidth + 1 ,10) + 103 + 'px');
 
   plus_pos += 126;
+}
+
+function openPnl() {
+  
 }

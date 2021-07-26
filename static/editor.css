@@ -10,11 +10,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 12px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #bdc0c5;
+    background-color: #93979c;
     border-radius: 10rem;
 }
 
@@ -31,6 +31,7 @@ a {
     width: 90vw;
     margin-top: 5vh;
     margin-left: 14vw;
+    animation: sch_fade 1s;
 }
 
 #category > p {
@@ -66,12 +67,13 @@ a {
     right: 14%;
     bottom: 78.6%;
     top: 15%;
-    height: 0.2vh;
+    height: 2px;
 
     border: 0;
     border-radius: 100rem;
 
     background-color: #D6D7D8;
+    animation: ct_hr_fade 1s;
 }
 
 #add_btn {
@@ -150,7 +152,7 @@ a {
     left: -40px;
     right: -40px;
     top: 93%;
-    height: 0.2vh;
+    height: 2px;
 
     border: 0;
     border-radius: 100rem;
@@ -179,7 +181,7 @@ a {
 
 #t_vl1 {
     position: absolute;
-    width: 0.2vh;
+    width: 2px;
     height: 35px;
     top: 19%;
     bottom: 100%;
@@ -206,7 +208,7 @@ a {
 
 #t_vl2 {
     position: absolute;
-    width: 0.2vh;
+    width: 2px;
     height: 35px;
     top: 19%;
     bottom: 100%;
@@ -263,7 +265,7 @@ a {
 
 #m_vl1 {
     position: absolute;
-    width: 0.2vh;
+    width: 2px;
     height: 20px;
     top: 63%;
     bottom: 100%;
@@ -306,7 +308,7 @@ a {
 
 #m_vl2 {
     position: absolute;
-    width: 0.2vh;
+    width: 2px;
     height: 20px;
     top: 63%;
     bottom: 100%;
@@ -339,6 +341,16 @@ a {
         opacity: 0;
     } to {
         padding-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes ct_hr_fade {
+    from {
+        top: 188px;
+        opacity: 0;
+    } to {
+        top: 138px;
         opacity: 1;
     }
 }
