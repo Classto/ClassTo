@@ -7,23 +7,11 @@ body {
     -webkit-user-select: none;
     user-select: none;
     overflow-x: hidden;
+    -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #93979c;
-    border-radius: 10rem;
-}
-
-::-webkit-scrollbar-track {
-    visibility: hidden;
-}
-
-a {
-    text-decoration-line: none;
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 #category {
@@ -86,6 +74,7 @@ a {
     outline: 0;
     border-radius: 100%;
     background-color: rgb(50, 125, 255);
+    z-index: 1;
 }
 
 #add_btn > div {
@@ -333,6 +322,30 @@ a {
     color: #327DFF;
 
     animation: sch_fade 1s;
+}
+
+#add_pnl_background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    filter: opacity(70%);
+    transition: filter 300ms linear;
+    visibility: inherit;
+}
+
+#add_pnl {
+    position: fixed;
+    top: 30px;
+    bottom: 30px;
+    left: 500px;
+    right: 500px;
+
+
+    border-radius: 10px;
+
+    background-color: white;
+    transition: filter 300ms linear;
 }
 
 @keyframes sch_fade {
