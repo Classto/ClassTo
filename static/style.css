@@ -18,7 +18,7 @@ p::selection, h1::selection {
 #copyright {
     position: absolute;
     top: 95vh;
-    left: 545px;
+    left: 57%;
     width: 595px;
     height: 36px;
     text-align: center;
@@ -53,6 +53,12 @@ p::selection, h1::selection {
     } to {
         left: 0vw;
     }
+}
+
+.introduce {
+    margin: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #m_title {
