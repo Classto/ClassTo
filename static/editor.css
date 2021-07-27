@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
+
+::placeholder {
+  color: #b4b6be;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #b4b6be;
+}
+
+::-ms-input-placeholder {
+    color: #b4b6be;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -8,10 +27,6 @@ body {
     user-select: none;
     overflow-x: hidden;
     -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar { 
-    display: none; 
 }
 
 #category {
@@ -28,9 +43,9 @@ body {
     left: 35px;
     margin-top: 5vh;
 
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 25px;
     line-height: 51px;
 
@@ -156,9 +171,9 @@ body {
     top: 13%;
     bottom: 100%;
 
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 34px;
     display: flex;
     align-items: center;
@@ -176,7 +191,7 @@ body {
     bottom: 100%;
     right: 115px;
     background-color: #D6D7D8;
-
+    border: 0;
     border-radius: 100rem;
 
     animation: vl_fade_t 1s;
@@ -203,7 +218,7 @@ body {
     bottom: 100%;
     right: 47px;
     background-color: #D6D7D8;
-
+    border: 0;
     border-radius: 100rem;
 
     animation: vl_fade_t 1s;
@@ -242,9 +257,9 @@ body {
     left: 30px;
     margin-top: -7px;
     width: auto;
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 21px;
 
     color: #327DFF;
@@ -259,7 +274,7 @@ body {
     top: 63%;
     bottom: 100%;
     background-color: #D6D7D8;
-
+    border: 0;
     border-radius: 100rem;
 
     animation: vl_fade_m 1s;
@@ -285,9 +300,9 @@ body {
     left: 175px;
     margin-top: -7px;
     width: auto;
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 21px;
 
     color: #327DFF;
@@ -302,7 +317,7 @@ body {
     top: 63%;
     bottom: 100%;
     background-color: #D6D7D8;
-
+    border: 0;
     border-radius: 100rem;
 
     animation: vl_fade_m 1s;
@@ -314,9 +329,9 @@ body {
     bottom: 100%;
     margin-top: -7px;
 
-    font-family: Noto Sans KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 21px;
 
     color: #327DFF;
@@ -336,16 +351,209 @@ body {
 
 #add_pnl {
     position: fixed;
-    top: 30px;
-    bottom: 30px;
-    left: 500px;
-    right: 500px;
+    width: 1000px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
-
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
 
     background-color: white;
+    box-shadow: 0 6px 25px rgb(58, 60, 63);
     transition: filter 300ms linear;
+}
+
+#add_pnl_header > p {
+    position: absolute;
+    top: -1.5%;
+    left: 3%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_header > hr {
+    position: absolute;
+    left: 0%;
+    right: 67.75%;
+    top: 11%;
+    height: 3px;
+
+    border: 0;
+    border-radius: 0 100rem 100rem 0;
+
+    background-color: #D6D7D8;
+}
+
+#add_pnl_body {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 12.5%;
+    height: 72.5%;
+}
+
+#add_pnl_vl {
+    position: absolute;
+    top: 0px;
+    bottom: 15px;
+    width: 2px;
+    left: 50%;
+    transform: translateX(50%);
+    background-color: #D6D7D8;
+    border: 0;
+    border-radius: 100rem;
+}
+
+#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus{
+    border: #327DFF solid 1.5px;
+}
+
+#add_pnl_title {
+    position: absolute;
+    margin-top: 0%;
+    left: 0%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4a4c53;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_title_input {
+    position: absolute;
+    top: 7%;
+    left: 0%;
+
+    width: 325px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_ctgr {
+    position: absolute;
+    margin-top: 0%;
+    left: 53.5%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_ctgr_input {
+    position: absolute;
+    top: 7%;
+    left: 53.5%;
+
+    width: 325px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    color: #4a4c53;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_time {
+    position: absolute;
+    margin-top: 10%;
+    left: 0%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_time_input {
+    position: absolute;
+    top: 27%;
+    left: 0%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    color: #4a4c53;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_day {
+    position: absolute;
+    margin-top: 10%;
+    left: 53.5%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_day_input {
+    position: absolute;
+    top: 28%;
+    left: 53.5%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: none;
+    color: #4a4c53;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
 }
 
 @keyframes sch_fade {
