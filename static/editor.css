@@ -455,7 +455,7 @@ body {
 #add_pnl_ctgr {
     position: absolute;
     margin-top: 0%;
-    left: 53.5%;
+    left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -469,8 +469,8 @@ body {
 
 #add_pnl_ctgr_input {
     position: absolute;
-    top: 7%;
-    left: 53.5%;
+    top: 7.075%;
+    left: 53.75%;
 
     width: 325px;
 
@@ -525,7 +525,7 @@ body {
 #add_pnl_day {
     position: absolute;
     margin-top: 10%;
-    left: 53.5%;
+    left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -539,8 +539,8 @@ body {
 
 #add_pnl_day_input {
     position: absolute;
-    top: 28%;
-    left: 53.5%;
+    top: 27%;
+    left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -550,6 +550,42 @@ body {
     outline: none;
     border: none;
     color: #4a4c53;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_nickname {
+    position: absolute;
+    margin-top: 20%;
+    left: 0%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4a4c53;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_nickname_input {
+    position: absolute;
+    top: 47%;
+    left: 0%;
+
+    width: 325px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: #D6D7D8 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
