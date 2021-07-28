@@ -57,6 +57,18 @@
 
       <p id="add_pnl_nickname">Meeting Nickname</p>
       <input id="add_pnl_nickname_input" type="text" placeholder="똑똑한 물고기">
+
+      <p id="add_pnl_option">Video&Audio Option</p>
+      <div id="add_pnl_option_input">
+        <label><input type="checkbox">Video</label>
+        <label><input type="checkbox">Audio</label>
+      </div>
+
+      <p id="add_pnl_id">Meeting ID</p>
+      <input id="add_pnl_id_input" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="11" placeholder="Enter Meeting ID">
+
+      <p id="add_pnl_pw">Meeting PW</p>
+      <input id="add_pnl_pw_input" type="text" placeholder="Enter Meeting PW">
     </div>
   </nav>
 </body>

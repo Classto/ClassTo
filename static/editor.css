@@ -403,7 +403,7 @@ body {
 #add_pnl_vl {
     position: absolute;
     top: 0px;
-    bottom: 15px;
+    bottom: 80px;
     width: 2px;
     left: 50%;
     transform: translateX(50%);
@@ -412,7 +412,7 @@ body {
     border-radius: 100rem;
 }
 
-#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus{
+#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus, #add_pnl_nickname_input:focus, #add_pnl_id_input:focus, #add_pnl_pw_input:focus {
     border: #327DFF solid 1.5px;
 }
 
@@ -568,8 +568,6 @@ body {
     color: #4a4c53;
     display: flex;
     align-items: center;
-
-    color: #4a4c53;
 }
 
 #add_pnl_nickname_input {
@@ -579,6 +577,108 @@ body {
 
     width: 325px;
 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_option {
+    position: absolute;
+    margin-top: 20%;
+    left: 53.75%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_option_input {
+    position: absolute;
+    top: 47%;
+    left: 53.75%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: none;
+    color: #4a4c53;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_id {
+    position: absolute;
+    margin-top: 32%;
+    left: 0%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #327DFF;
+    display: flex;
+    align-items: center;
+}
+
+#add_pnl_id_input {
+    position: absolute;
+    top: 71.5%;
+    left: 0%;
+
+    width: 325px;
+    color: #327DFF;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_pw {
+    position: absolute;
+    margin-top: 32%;
+    left: 53.75%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #327DFF;
+    display: flex;
+    align-items: center;
+}
+
+#add_pnl_pw_input {
+    position: absolute;
+    top: 71.5%;
+    left: 53.75%;
+
+    width: 325px;
+    color: #327DFF;
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 700;
