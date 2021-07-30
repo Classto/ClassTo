@@ -427,7 +427,7 @@ body {
     border-radius: 100rem;
 }
 
-#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus, #add_pnl_nickname_input:focus, #add_pnl_id_input:focus, #add_pnl_pw_input:focus, #add_pnl_type_input:focus {
+#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus, #add_pnl_nickname_input:focus, #add_pnl_id_input:focus, #add_pnl_pw_input:focus, #add_pnl_type_input:focus, #add_pnl_link_input:focus {
     border: #327DFF solid 1.5px;
 }
 
@@ -675,7 +675,7 @@ body {
     transition: border 100ms linear;
 }
 
-#add_pnl_id {
+#add_pnl_id, #add_pnl_link {
     position: absolute;
     margin-top: 30%;
     left: 53.75%;
@@ -729,6 +729,26 @@ body {
     left: 71.56%;
 
     width: 150px;
+    color: #327DFF;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
+#add_pnl_link_input {
+    position: absolute;
+    top: 87.5%;
+    left: 53.75%;
+
+    width: 325px;
     color: #327DFF;
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;

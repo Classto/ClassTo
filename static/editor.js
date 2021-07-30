@@ -1,8 +1,8 @@
 let plus_pos = 0;
 let sch_count = 0;
 
-window.onload = function() {
-  let interval = setInterval(function() {
+window.onload = () => {
+  let interval = setInterval(() => {
     sch_count++;
     createSch();
     if (sch_count === 5) {
@@ -10,9 +10,29 @@ window.onload = function() {
     }
   }, 150);
 
-  document.getElementById('add_btn').addEventListener('click', function() {
+  document.getElementById('add_btn').addEventListener('click', () => {
     createSch();
     window.scrollBy(0, 270 + plus_pos);
+  });
+
+  document.getElementById('add_pnl_type_input').addEventListener('change', (event) => {
+    if(event.target.value === 'link') {
+      document.getElementById('add_pnl_id').style.setProperty('visibility', 'hidden');
+      document.getElementById('add_pnl_id_input').style.setProperty('visibility', 'hidden');
+      document.getElementById('add_pnl_pw').style.setProperty('visibility', 'hidden');
+      document.getElementById('add_pnl_pw_input').style.setProperty('visibility', 'hidden');
+
+      document.getElementById('add_pnl_link').style.setProperty('visibility', 'visible');
+      document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'visible');
+    } else {
+      document.getElementById('add_pnl_id').style.setProperty('visibility', 'visible');
+      document.getElementById('add_pnl_id_input').style.setProperty('visibility', 'visible');
+      document.getElementById('add_pnl_pw').style.setProperty('visibility', 'visible');
+      document.getElementById('add_pnl_pw_input').style.setProperty('visibility', 'visible');
+
+      document.getElementById('add_pnl_link').style.setProperty('visibility', 'hidden');
+      document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'hidden');
+    }
   });
 }
 
@@ -98,14 +118,13 @@ function createSch() {
   plus_pos += 126;
 }
 
+
+
 function openPnl() {
-  
+  document.getElementById('add_pnl_link').style.setProperty('visibility', 'hidden');
+  document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'hidden');
 }
 
 function submitPnl() {
 
-}
-
-function changeType() {
-  
 }
