@@ -75,7 +75,7 @@ body {
     border: 0;
     border-radius: 100rem;
 
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
     animation: ct_hr_fade 1s;
 }
 
@@ -125,16 +125,17 @@ body {
 }
 
 #add_btn > i {
-    line-height: 1.75em;
+    position: absolute;
+    top: 14px;
+    left: 15px;
     color: #ffffff;
-    display: block;
-    text-align: center;
     font-size: 2.5em;
     transition: color 150ms linear;
 }
 
 #add_btn:hover > i {
-    line-height: 1.715em;
+    top: 14px;
+    left: 15px;
     font-size: 2.7em;
 }
 
@@ -176,7 +177,7 @@ body {
     border: 0;
     border-radius: 100rem;
 
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
 
     animation: hr_fade 1s;
 }
@@ -205,7 +206,7 @@ body {
     top: 19%;
     bottom: 100%;
     right: 115px;
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
     border: 0;
     border-radius: 100rem;
 
@@ -232,7 +233,7 @@ body {
     top: 19%;
     bottom: 100%;
     right: 47px;
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
     border: 0;
     border-radius: 100rem;
 
@@ -288,7 +289,7 @@ body {
     height: 20px;
     top: 63%;
     bottom: 100%;
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
     border: 0;
     border-radius: 100rem;
 
@@ -331,7 +332,7 @@ body {
     height: 20px;
     top: 63%;
     bottom: 100%;
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
     border: 0;
     border-radius: 100rem;
 
@@ -422,7 +423,7 @@ body {
     width: 2px;
     left: 50%;
     transform: translateX(50%);
-    background-color: #D6D7D8;
+    background-color: #e7ebf0;
     border: 0;
     border-radius: 100rem;
 }
@@ -460,7 +461,7 @@ body {
     font-size: 15px;
     display: flex;
     outline: none;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
@@ -496,7 +497,7 @@ body {
     display: flex;
     outline: none;
     color: #4a4c53;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
@@ -530,7 +531,7 @@ body {
     display: flex;
     outline: none;
     color: #4a4c53;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
@@ -598,7 +599,7 @@ body {
     font-size: 15px;
     display: flex;
     outline: none;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
@@ -668,11 +669,11 @@ body {
     display: flex;
     outline: none;
     color: #4a4c53;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
-    transition: border 100ms linear;
+    transition: border 100ms linear, background-color 100ms linear;
 }
 
 #add_pnl_id, #add_pnl_link {
@@ -702,7 +703,7 @@ body {
     font-size: 15px;
     display: flex;
     outline: none;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
@@ -736,7 +737,7 @@ body {
     font-size: 15px;
     display: flex;
     outline: none;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
@@ -756,7 +757,7 @@ body {
     font-size: 15px;
     display: flex;
     outline: none;
-    border: #D6D7D8 solid 1.5px;
+    border: #e7ebf0 solid 1.5px;
     border-radius: 4px;
     align-items: center;
 
