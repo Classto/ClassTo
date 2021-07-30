@@ -90,6 +90,8 @@ body {
     border-radius: 100%;
     background-color: rgb(50, 125, 255);
     z-index: 1;
+    cursor: pointer;
+    transition: background-color 150ms linear;
 }
 
 #add_btn > div {
@@ -118,12 +120,17 @@ body {
     background-color: #4688ff;
 }
 
+#add_btn:active {
+    background: #276de6;
+}
+
 #add_btn > i {
     line-height: 1.75em;
     color: #ffffff;
     display: block;
     text-align: center;
     font-size: 2.5em;
+    transition: color 150ms linear;
 }
 
 #add_btn:hover > i {
@@ -131,9 +138,17 @@ body {
     font-size: 2.7em;
 }
 
+#add_btn:active > i {
+    color: #c2c2c2;
+}
+
 #add_btn:hover > div {
     width: 130%;
     height: 130%;
+}
+
+#add_btn:active > div {
+    background-color: rgba(50, 125, 255, 0.175);
 }
 
 #sch_div {
@@ -352,12 +367,12 @@ body {
 #add_pnl {
     position: fixed;
     width: 1000px;
-    height: 650px;
+    height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 
     background-color: white;
     box-shadow: 0 6px 25px rgb(58, 60, 63);
@@ -366,44 +381,44 @@ body {
 
 #add_pnl_header > p {
     position: absolute;
-    top: -1.5%;
+    top: -4.05%;
     left: 3%;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 34px;
+    font-size: 35px;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #327DFF;
 }
 
-#add_pnl_header > hr {
+#add_pnl_header > i {
     position: absolute;
-    left: 0%;
-    right: 67.75%;
-    top: 11%;
-    height: 3px;
+    top: 6.25%;
+    right: 3%;
 
-    border: 0;
-    border-radius: 0 100rem 100rem 0;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
-    background-color: #D6D7D8;
+    color: #bbbbbb;
 }
 
 #add_pnl_body {
     position: absolute;
     left: 3%;
     right: 3%;
-    bottom: 12.5%;
+    bottom: 8%;
     height: 72.5%;
 }
 
 #add_pnl_vl {
     position: absolute;
     top: 0px;
-    bottom: 80px;
+    bottom: 0px;
     width: 2px;
     left: 50%;
     transform: translateX(50%);
@@ -412,7 +427,7 @@ body {
     border-radius: 100rem;
 }
 
-#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus, #add_pnl_nickname_input:focus, #add_pnl_id_input:focus, #add_pnl_pw_input:focus {
+#add_pnl_title_input:focus, #add_pnl_time_input:focus, #add_pnl_ctgr_input:focus, #add_pnl_nickname_input:focus, #add_pnl_id_input:focus, #add_pnl_pw_input:focus, #add_pnl_type_input:focus {
     border: #327DFF solid 1.5px;
 }
 
@@ -434,7 +449,7 @@ body {
 
 #add_pnl_title_input {
     position: absolute;
-    top: 7%;
+    top: 9.75%;
     left: 0%;
 
     width: 325px;
@@ -469,7 +484,7 @@ body {
 
 #add_pnl_ctgr_input {
     position: absolute;
-    top: 7.075%;
+    top: 9.75%;
     left: 53.75%;
 
     width: 325px;
@@ -505,7 +520,7 @@ body {
 
 #add_pnl_time_input {
     position: absolute;
-    top: 27%;
+    top: 35.75%;
     left: 0%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -539,7 +554,7 @@ body {
 
 #add_pnl_day_input {
     position: absolute;
-    top: 27%;
+    top: 35.75%;
     left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -572,7 +587,7 @@ body {
 
 #add_pnl_nickname_input {
     position: absolute;
-    top: 47%;
+    top: 61.5%;
     left: 0%;
 
     width: 325px;
@@ -607,7 +622,7 @@ body {
 
 #add_pnl_option_input {
     position: absolute;
-    top: 47%;
+    top: 61.5%;
     left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -624,10 +639,46 @@ body {
     transition: border 100ms linear;
 }
 
+#add_pnl_type {
+    position: absolute;
+    margin-top: 30%;
+    left: 0%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #4a4c53;
+}
+
+#add_pnl_type_input {
+    position: absolute;
+    top: 87.5%;
+    left: 0%;
+
+    width: 325px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    outline: none;
+    color: #4a4c53;
+    border: #D6D7D8 solid 1.5px;
+    border-radius: 4px;
+    align-items: center;
+
+    transition: border 100ms linear;
+}
+
 #add_pnl_id {
     position: absolute;
-    margin-top: 32%;
-    left: 0%;
+    margin-top: 30%;
+    left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -640,10 +691,10 @@ body {
 
 #add_pnl_id_input {
     position: absolute;
-    top: 71.5%;
-    left: 0%;
+    top: 87.5%;
+    left: 53.75%;
 
-    width: 325px;
+    width: 150px;
     color: #327DFF;
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -660,8 +711,8 @@ body {
 
 #add_pnl_pw {
     position: absolute;
-    margin-top: 32%;
-    left: 53.75%;
+    margin-top: 30%;
+    left: 71.56%;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -674,10 +725,10 @@ body {
 
 #add_pnl_pw_input {
     position: absolute;
-    top: 71.5%;
-    left: 53.75%;
+    top: 87.5%;
+    left: 71.56%;
 
-    width: 325px;
+    width: 150px;
     color: #327DFF;
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -690,6 +741,59 @@ body {
     align-items: center;
 
     transition: border 100ms linear;
+}
+
+#add_pnl > button {
+    position: absolute;
+    bottom: 2.25%;
+    right: 1.5%;
+
+    width: 255px;
+    height: 60px;
+
+    border: 0;
+    outline: 0;
+    border-radius: 43px;
+
+    background-color: #327DFF;
+    box-shadow: 0 6px 25px rgba(50, 125, 255, 0.45);
+    transition: background-color 150ms linear;
+    cursor: pointer;
+}
+
+#add_pnl > button:hover {
+    background-color: #4688ff;
+}
+
+#add_pnl > button:active {
+    background-color: #276de6;
+}
+
+#add_pnl > button > i{
+    position: absolute;
+    top: 17.5px;
+    left: 17.5px;
+
+    color: white;
+    font-size: 25px;
+
+    transition: color 150ms linear;
+}
+
+#add_pnl > button > p {
+    position: absolute;
+    bottom: -17px;
+    right: 17.5px;
+
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;
+
+    transition: color 150ms linear;
+}
+
+#add_pnl > button:active > i, #add_pnl > button:active > p {
+    color: #c2c2c2;
 }
 
 @keyframes sch_fade {

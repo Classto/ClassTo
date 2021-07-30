@@ -101,3 +101,11 @@ function createSch() {
 function openPnl() {
   
 }
+
+function submitPnl() {
+
+}
+
+function changeType() {
+  
+}
