@@ -154,8 +154,12 @@ function addPnlVisibility(type) {
       document.getElementById('add_pnl').style.setProperty('opacity', '1');
       break;
     case 1:
-      let add_pnl_anim = document.getElementById('add_pnl').addEventListener('animationend', setDisplay(document.getElementById('add_pnl')));
-      let add_pnl_bg_anim = document.getElementById('add_pnl_background').addEventListener('animationend', setDisplay(document.getElementById('add_pnl_background')));
+      let add_pnl_anim = document.getElementById('add_pnl').addEventListener('animationend', () => {
+        document.getElementById('add_pnl').style.setProperty('display', 'none');
+      });
+      let add_pnl_bg_anim = document.getElementById('add_pnl_background').addEventListener('animationend', () => {
+        document.getElementById('add_pnl_background').style.setProperty('display', 'none');
+      });
       document.getElementById('add_pnl').style.setProperty('opacity', '0');
       document.getElementById('add_pnl_background').style.setProperty('opacity', '0');
 
@@ -165,6 +169,3 @@ function addPnlVisibility(type) {
   }
 }
 
-function setDisplay(obj) {
-  obj.style.setProperty('display', 'none');
-}
