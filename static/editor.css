@@ -29,12 +29,15 @@ body {
     -ms-overflow-style: none;
 }
 
+label, label > input {
+    cursor: pointer;
+}
+
 #category {
     position: absolute;
     width: 90vw;
     margin-top: 5vh;
     margin-left: 14vw;
-    animation: sch_fade 1s;
 }
 
 #category > p {
@@ -76,7 +79,6 @@ body {
     border-radius: 100rem;
 
     background-color: #e7ebf0;
-    animation: ct_hr_fade 1s;
 }
 
 #add_btn {
@@ -224,6 +226,7 @@ body {
     color: #327DFF;
 
     animation: sch_fade 1s;
+    cursor: pointer;
 }
 
 #t_vl2 {
@@ -252,6 +255,7 @@ body {
     color: #327DFF;
 
     animation: sch_fade 1s;
+    cursor: pointer;
 }
 
 #time_i {
@@ -268,7 +272,7 @@ body {
 
 #time {
     position: absolute;
-    top: 63%;
+    top: 64%;
     bottom: 100%;
     left: 30px;
     margin-top: -7px;
@@ -311,7 +315,7 @@ body {
 
 #name {
     position: absolute;
-    top: 63%;
+    top: 64%;
     bottom: 100%;
     left: 175px;
     margin-top: -7px;
@@ -341,7 +345,7 @@ body {
 
 #id {
     position: absolute;
-    top: 63%;
+    top: 64%;
     bottom: 100%;
     margin-top: -7px;
 
@@ -356,33 +360,35 @@ body {
 }
 
 #add_pnl_background {
+    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: black;
     filter: opacity(70%);
-    transition: filter 300ms linear;
-    visibility: inherit;
+    opacity: 0;
+    transition: filter 300ms linear, opacity 150ms ease-out;
 }
 
 #add_pnl {
+    display: none;
     position: fixed;
     width: 1000px;
-    height: 500px;
+    height: 575px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    opacity: 0;
 
     border-radius: 10px;
 
     background-color: white;
-    box-shadow: 0 6px 25px rgb(58, 60, 63);
-    transition: filter 300ms linear;
+    transition: opacity 150ms ease-out;
 }
 
 #add_pnl_header > p {
     position: absolute;
-    top: -4.05%;
+    top: -2.5%;
     left: 3%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -408,18 +414,31 @@ body {
     color: #bbbbbb;
 }
 
+#add_pnl_header > hr {
+    position: absolute;
+    left: 0%;
+    right: 65%;
+    bottom: 85%;
+    height: 2px;
+
+    border: 0;
+    border-radius: 100rem;
+
+    background-color: #e7ebf0;
+}
+
 #add_pnl_body {
     position: absolute;
     left: 3%;
     right: 3%;
-    bottom: 8%;
+    bottom: 6%;
     height: 72.5%;
 }
 
 #add_pnl_vl {
     position: absolute;
     top: 0px;
-    bottom: 0px;
+    bottom: 20px;
     width: 2px;
     left: 50%;
     transform: translateX(50%);
@@ -506,7 +525,7 @@ body {
 
 #add_pnl_time {
     position: absolute;
-    margin-top: 10%;
+    margin-top: 11.5%;
     left: 0%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -540,7 +559,7 @@ body {
 
 #add_pnl_day {
     position: absolute;
-    margin-top: 10%;
+    margin-top: 11.5%;
     left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -574,7 +593,7 @@ body {
 
 #add_pnl_nickname {
     position: absolute;
-    margin-top: 20%;
+    margin-top: 23%;
     left: 0%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -608,7 +627,7 @@ body {
 
 #add_pnl_option {
     position: absolute;
-    margin-top: 20%;
+    margin-top: 23%;
     left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -642,7 +661,7 @@ body {
 
 #add_pnl_type {
     position: absolute;
-    margin-top: 30%;
+    margin-top: 34.5%;
     left: 0%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -678,7 +697,7 @@ body {
 
 #add_pnl_id, #add_pnl_link {
     position: absolute;
-    margin-top: 30%;
+    margin-top: 34.5%;
     left: 53.75%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -712,7 +731,7 @@ body {
 
 #add_pnl_pw {
     position: absolute;
-    margin-top: 30%;
+    margin-top: 34.5%;
     left: 71.56%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -776,10 +795,10 @@ body {
 
 @keyframes ct_hr_fade {
     from {
-        top: 188px;
+        top: 189px;
         opacity: 0;
     } to {
-        top: 138px;
+        top: 139px;
         opacity: 1;
     }
 }
