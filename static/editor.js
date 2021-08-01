@@ -46,6 +46,8 @@ window.onload = () => {
   });
 
   document.getElementById('add_pnl_header_i').addEventListener('click', () => {
+    document.getElementById('add_btn').style.setProperty('opacity', '1');
+
     showPannel(false);
   });
 }
