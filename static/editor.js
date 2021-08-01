@@ -10,22 +10,17 @@ window.onload = () => {
   //   }
   // }, 150);
 
-  document.getElementById('add_btn_plus').style.setProperty('opacity', '1');
-  document.getElementById('add_btn_submit').style.setProperty('opacity', '0');
-
   document.getElementById('add_btn').addEventListener('click', () => {
-    if (document.getElementById('add_btn_plus').style.opacity === '1') {
-      document.getElementById('add_btn_plus').style.setProperty('opacity', '0');
-      document.getElementById('add_btn_submit').style.setProperty('opacity', '1');
+    document.getElementById('add_btn').style.setProperty('opacity', '0');
 
-      openPnl();
-    } else {
-      document.getElementById('add_btn_plus').style.setProperty('opacity', '1');
-      document.getElementById('add_btn_submit').style.setProperty('opacity', '0');
+    openPnl();
+  });
+
+  document.getElementById('add_pnl_btn').addEventListener('click', () => {
+    document.getElementById('add_btn').style.setProperty('opacity', '1');
       
-      createSch();
-      window.scrollBy(0, 270 + plus_pos);
-    }
+    createSch();
+    window.scrollBy(0, 270 + plus_pos);
   });
 
   document.getElementById('add_pnl_type_input').addEventListener('change', (event) => {
@@ -70,7 +65,12 @@ function createSch() {
   sch_div.style.top = plus_pos + 'px';
 
   var sch_title = document.createElement('h1');
-  sch_title.innerText = document.getElementById('add_pnl_title_input').value;
+  if (document.getElementById('add_pnl_title_input').value !== '') {
+    sch_title.innerText = document.getElementById('add_pnl_title_input').value;
+  }
+  else {
+    sch_title.innerText = 'Schedule 01';
+  }
 
   var t_vl1 = document.createElement('div');
   var t_vl2 = document.createElement('div');
