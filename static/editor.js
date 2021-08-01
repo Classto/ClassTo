@@ -1,6 +1,8 @@
 let plus_pos = 0;
 let sch_count = 0;
 
+showPannel(false);
+
 window.onload = () => {
   // let interval = setInterval(() => {
   //   sch_count++;
@@ -13,7 +15,7 @@ window.onload = () => {
   document.getElementById('add_btn').addEventListener('click', () => {
     document.getElementById('add_btn').style.setProperty('opacity', '0');
 
-    openPnl();
+    showPannel(true);
   });
 
   document.getElementById('add_pnl_btn').addEventListener('click', () => {
@@ -44,9 +46,7 @@ window.onload = () => {
   });
 
   document.getElementById('add_pnl_header_i').addEventListener('click', () => {
-    document.getElementById('add_btn_plus').style.setProperty('opacity', '1');
-    document.getElementById('add_btn_submit').style.setProperty('opacity', '0');
-    addPnlVisibility(1);
+    showPannel(false);
   });
 }
 
@@ -126,7 +126,7 @@ function createSch() {
   sch_div.append(id);
   sch_div.append(sch_hr);
 
-  addPnlVisibility(1);
+  showPannel(false)
   document.getElementById('sch_div').append(sch_div);
 
   m_vl1.style.setProperty('left', parseInt(time.clientWidth + 1 ,10) + 38 + 'px');
@@ -144,28 +144,10 @@ function openPnl() {
   document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'hidden');
 }
 
-function addPnlVisibility(type) {
-  switch (type) {
-    //0 : pnl open, 1 : pnl close(submit)
-    case 0:
-      document.getElementById('add_pnl_background').style.setProperty('display', 'inline');
-      document.getElementById('add_pnl').style.setProperty('display', 'inline');
-      document.getElementById('add_pnl_background').style.setProperty('opacity', '1');
-      document.getElementById('add_pnl').style.setProperty('opacity', '1');
-      break;
-    case 1:
-      let add_pnl_anim = document.getElementById('add_pnl').addEventListener('animationend', () => {
-        document.getElementById('add_pnl').style.setProperty('display', 'none');
-      });
-      let add_pnl_bg_anim = document.getElementById('add_pnl_background').addEventListener('animationend', () => {
-        document.getElementById('add_pnl_background').style.setProperty('display', 'none');
-      });
-      document.getElementById('add_pnl').style.setProperty('opacity', '0');
-      document.getElementById('add_pnl_background').style.setProperty('opacity', '0');
-
-      document.getElementById('add_pnl').removeEventListener('animationend', add_pnl_anim);
-      document.getElementById('add_pnl_background').removeEventListener('animationend', add_pnl_bg_anim);
-      break;
+function showPannel(bool) {
+  if (bool) {
+    document.getElementById('pannel').style.display = "block";
+  } else {
+    document.getElementById('pannel').style.display = "none";
   }
 }
-

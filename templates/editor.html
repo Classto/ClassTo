@@ -12,7 +12,6 @@
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
-  <script src="../static/editor.js" ></script>
   <div id="category">
     <p>Sample</p>
     <i class="fas fa-chevron-down fa-2x"></i>
@@ -23,14 +22,17 @@
     <i id="add_btn_plus" class="fas fa-plus"></i>
     <div></div>
   </button>
-  
+
+  <div id="pannel" style="display: none">
   <div id='add_pnl_background'></div>
-  <nav id='add_pnl'>
+
+  <nav id="add_pnl">
     <div id="add_pnl_header">
       <p>Create Schedule</p>
       <i id="add_pnl_header_i" class="fas fa-times"></i>
       <hr>
     </div>
+
     <div id="add_pnl_body">
       <hr id="add_pnl_vl">
       <p id="add_pnl_title">Schedule Title</p>
@@ -83,6 +85,9 @@
       <p>Submit</p>
     </button>
   </nav>
+  </div>
+
+  <script src="../static/editor.js" ></script>
 </body>
 
 </html>
