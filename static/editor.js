@@ -148,6 +148,9 @@ function openPnl() {
 
 function showPannel(bool) {
   if (bool) {
+    document.getElementById('add_pnl_link').style.setProperty('visibility', 'hidden');
+    document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'hidden');
+    
     document.getElementById('pannel').style.display = "block";
   } else {
     document.getElementById('pannel').style.display = "none";
