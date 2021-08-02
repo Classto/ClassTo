@@ -95,6 +95,7 @@ p::selection, h1::selection {
     outline: 0;
     transition: background-color 150ms linear;
     animation: m_icon_enable 2s;
+    cursor: pointer;
 }
 
 #m_get_start {
@@ -115,6 +116,7 @@ p::selection, h1::selection {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    cursor: pointer;
 }
 
 #m_get_start_text, #m_get_start_icon {
