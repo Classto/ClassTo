@@ -803,6 +803,7 @@ label, label > input {
     font-size: 25px;
     text-align: center;
     transition: color 150ms linear;
+    cursor: pointer;
 }
 
 #add_pnl > button:hover {
