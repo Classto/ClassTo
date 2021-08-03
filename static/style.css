@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration-line: none;
-}
-
 p::selection, h1::selection {
     color: #ffffff;
     background-color: #33353E;
@@ -100,7 +96,7 @@ p::selection, h1::selection {
 
 #m_get_start {
     position: relative;
-    top: -264px;
+    top: -297px;
     left: 205px;
     width: 240px;
     height: 64px;
@@ -118,6 +114,7 @@ p::selection, h1::selection {
     user-select: none;
     cursor: pointer;
 }
+
 
 #m_get_start_text, #m_get_start_icon {
     transition: all 150ms linear;
@@ -149,9 +146,9 @@ p::selection, h1::selection {
 }
 
 #m_get_start_text {
-    position: relative;
-    top: -23px;
-    left: 0px;
+    position: absolute;
+    top: -22px;
+    left: 5%;
     width: 193px;
     height: 62px;
     text-align: center;
@@ -163,11 +160,10 @@ p::selection, h1::selection {
 }
 
 #m_get_start_icon {
-    position: relative;
+    position: absolute;
     top:50%;
     transform:translateY(-50%);
-    top: -91px;
-    left: 95px;
+    right: 5%;
     color: #ffffff;
     opacity: 1;
 }
