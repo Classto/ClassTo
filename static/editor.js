@@ -71,7 +71,7 @@ function createSch() {
     sch_title.innerText = document.getElementById('add_pnl_title_input').value;
   }
   else {
-    sch_title.innerText = 'Schedule 01';
+    sch_title.innerText = 'Classto Schedule';
   }
 
   var t_vl1 = document.createElement('div');

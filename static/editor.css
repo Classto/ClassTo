@@ -433,7 +433,7 @@ label, label > input {
 #add_pnl_vl {
     position: absolute;
     top: 0px;
-    bottom: 30px;
+    bottom: 75px;
     width: 2px;
     left: 50%;
     transform: translateX(50%);
@@ -464,7 +464,7 @@ label, label > input {
 
 #add_pnl_title_input {
     position: absolute;
-    top: 9.75%;
+    top: 8.5%;
     left: 1.25%;
 
     width: 325px;
@@ -499,7 +499,7 @@ label, label > input {
 
 #add_pnl_ctgr_input {
     position: absolute;
-    top: 9.75%;
+    top: 8.5%;
     left: 55%;
 
     width: 325px;
@@ -520,7 +520,7 @@ label, label > input {
 
 #add_pnl_time {
     position: absolute;
-    margin-top: 11.5%;
+    margin-top: 10%;
     left: 1.25%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -535,7 +535,7 @@ label, label > input {
 
 #add_pnl_time_input {
     position: absolute;
-    top: 34.5%;
+    top: 30.05%;
     left: 1.25%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -554,7 +554,7 @@ label, label > input {
 
 #add_pnl_day {
     position: absolute;
-    margin-top: 11.5%;
+    margin-top: 10%;
     left: 55%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -569,7 +569,7 @@ label, label > input {
 
 #add_pnl_day_input {
     position: absolute;
-    top: 34.5%;
+    top: 30.05%;
     left: 55%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -588,7 +588,7 @@ label, label > input {
 
 #add_pnl_nickname {
     position: absolute;
-    margin-top: 23%;
+    margin-top: 20%;
     left: 1.25%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -602,7 +602,7 @@ label, label > input {
 
 #add_pnl_nickname_input {
     position: absolute;
-    top: 59.25%;
+    top: 51.8%;
     left: 1.25%;
 
     width: 325px;
@@ -622,7 +622,7 @@ label, label > input {
 
 #add_pnl_option {
     position: absolute;
-    margin-top: 23%;
+    margin-top: 20%;
     left: 55%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -637,7 +637,7 @@ label, label > input {
 
 #add_pnl_option_input {
     position: absolute;
-    top: 59.25%;
+    top: 51.8%;
     left: 55%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -656,7 +656,7 @@ label, label > input {
 
 #add_pnl_type {
     position: absolute;
-    margin-top: 34.5%;
+    margin-top: 30%;
     left: 1.25%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -671,7 +671,7 @@ label, label > input {
 
 #add_pnl_type_input {
     position: absolute;
-    top: 84%;
+    top: 73.65%;
     left: 1.25%;
 
     width: 325px;
@@ -692,7 +692,7 @@ label, label > input {
 
 #add_pnl_id, #add_pnl_link {
     position: absolute;
-    margin-top: 34.5%;
+    margin-top: 30%;
     left: 55%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -706,7 +706,7 @@ label, label > input {
 
 #add_pnl_id_input {
     position: absolute;
-    top: 84%;
+    top: 73.65%;
     left: 55%;
 
     width: 150px;
@@ -726,7 +726,7 @@ label, label > input {
 
 #add_pnl_pw {
     position: absolute;
-    margin-top: 34.5%;
+    margin-top: 30%;
     left: 73.5%;
 
     font-family: 'Noto Sans KR', sans-serif;
@@ -740,7 +740,7 @@ label, label > input {
 
 #add_pnl_pw_input {
     position: absolute;
-    top: 84%;
+    top: 73.65%;
     left: 73.5%;
 
     width: 150px;
@@ -760,7 +760,7 @@ label, label > input {
 
 #add_pnl_link_input {
     position: absolute;
-    top: 84%;
+    top: 73.65%;
     left: 55%;
 
     width: 325px;
@@ -783,13 +783,14 @@ label, label > input {
     width: 20%;
     height: 50px;
     left: 40%;
-    bottom: 20px;
+    bottom: 30px;
     outline: none;
     border: none;
     background-color: #327dff;
     border-radius: 5px;
     box-shadow: 0 6px 25px rgba(50, 125, 255, 0.45);
     transition: background 150ms linear;
+    cursor: pointer;
 }
 
 #add_pnl > button > p {
@@ -803,7 +804,6 @@ label, label > input {
     font-size: 25px;
     text-align: center;
     transition: color 150ms linear;
-    cursor: pointer;
 }
 
 #add_pnl > button:hover {
