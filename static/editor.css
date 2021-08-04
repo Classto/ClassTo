@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
 
 ::placeholder {
   color: #b4b6be;
@@ -46,7 +46,7 @@ label, label > input {
     left: 35px;
     margin-top: 5vh;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
@@ -189,7 +189,7 @@ label, label > input {
     top: 13%;
     bottom: 100%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 34px;
@@ -277,7 +277,7 @@ label, label > input {
     left: 30px;
     margin-top: -7px;
     width: auto;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 21px;
@@ -320,7 +320,7 @@ label, label > input {
     left: 175px;
     margin-top: -7px;
     width: auto;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 21px;
@@ -349,7 +349,7 @@ label, label > input {
     bottom: 100%;
     margin-top: -7px;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 21px;
@@ -386,10 +386,10 @@ label, label > input {
     top: -2.5%;
     left: 3%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 38px;
     display: flex;
     align-items: center;
 
@@ -451,15 +451,15 @@ label, label > input {
     margin-top: 0%;
     left: 1.25%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 23px;
     color: #4a4c53;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #5c5f64;
 }
 
 #add_pnl_title_input {
@@ -469,7 +469,7 @@ label, label > input {
 
     width: 325px;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -487,14 +487,14 @@ label, label > input {
     margin-top: 0%;
     left: 55%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #5c5f64;
 }
 
 #add_pnl_ctgr_input {
@@ -504,7 +504,7 @@ label, label > input {
 
     width: 325px;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -523,14 +523,14 @@ label, label > input {
     margin-top: 10%;
     left: 1.25%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #5c5f64;
 }
 
 #add_pnl_time_input {
@@ -538,7 +538,7 @@ label, label > input {
     top: 30.05%;
     left: 1.25%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -557,14 +557,14 @@ label, label > input {
     margin-top: 10%;
     left: 55%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #5c5f64;
 }
 
 #add_pnl_day_input {
@@ -572,7 +572,7 @@ label, label > input {
     top: 30.05%;
     left: 55%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -591,11 +591,11 @@ label, label > input {
     margin-top: 20%;
     left: 1.25%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #4a4c53;
+    font-size: 23px;
+    color: #5c5f64;
     display: flex;
     align-items: center;
 }
@@ -607,7 +607,7 @@ label, label > input {
 
     width: 325px;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -625,14 +625,14 @@ label, label > input {
     margin-top: 20%;
     left: 55%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #5c5f64;
 }
 
 #add_pnl_option_input {
@@ -640,7 +640,7 @@ label, label > input {
     top: 51.8%;
     left: 55%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -659,14 +659,14 @@ label, label > input {
     margin-top: 30%;
     left: 1.25%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     align-items: center;
 
-    color: #4a4c53;
+    color: #5c5f64;
 }
 
 #add_pnl_type_input {
@@ -676,7 +676,7 @@ label, label > input {
 
     width: 325px;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -695,11 +695,11 @@ label, label > input {
     margin-top: 30%;
     left: 55%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #327DFF;
+    font-size: 23px;
+    color: #5895ff;
     display: flex;
     align-items: center;
 }
@@ -711,7 +711,7 @@ label, label > input {
 
     width: 150px;
     color: #327DFF;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -729,11 +729,11 @@ label, label > input {
     margin-top: 30%;
     left: 73.5%;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    color: #327DFF;
+    font-size: 23px;
+    color: #5895ff;
     display: flex;
     align-items: center;
 }
@@ -745,7 +745,7 @@ label, label > input {
 
     width: 150px;
     color: #327DFF;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -765,7 +765,7 @@ label, label > input {
 
     width: 325px;
     color: #327DFF;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -795,14 +795,14 @@ label, label > input {
 
 #add_pnl > button > p {
     position: absolute;
-    top: -20px;
-    left: 55px;
+    top: -23px;
+    left: 54px;
 
     color: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
     transition: color 150ms linear;
 }

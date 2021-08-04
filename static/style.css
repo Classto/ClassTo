@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
 
 body {
     overflow: hidden;
@@ -63,12 +63,16 @@ p::selection, h1::selection {
     width: 60%; /* 815px */
     height: 275px;
     text-align: left;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 90px;
     line-height: 100px;
     letter-spacing: 1.2px;
     color: #33353e;
     animation: m_title_enable 2s;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 #m_icon_div {
@@ -142,13 +146,14 @@ p::selection, h1::selection {
 
 #m_get_start_text {
     position: absolute;
-    top: -22px;
-    left: 5%;
+    top: -22.5px;
+    left: 2%;
     width: 193px;
     height: 62px;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 30px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
     letter-spacing: 0;
     color: #ffffff;
     opacity: 1;
