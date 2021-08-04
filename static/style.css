@@ -115,7 +115,6 @@ p::selection, h1::selection {
     cursor: pointer;
 }
 
-
 #m_get_start_text, #m_get_start_icon {
     transition: all 150ms linear;
 }
@@ -127,10 +126,6 @@ p::selection, h1::selection {
 
 #m_get_github:hover {
     background: #efefef;
-}
-
-#m_get_start:hover > i {
-   transform: translate(5px, -20px);
 }
 
 #m_get_start:active {
