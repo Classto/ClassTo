@@ -109,7 +109,7 @@ function createSch() {
 
   var sch_hr = document.createElement('hr');
 
-  document.getElementById('new_sch').style.setProperty('height', 270 + plus_pos + 'px');
+  document.getElementById('sch_div').style.setProperty('height', 270 + plus_pos + 'px');
 
   new_sch.append(sch_title);
 
@@ -129,7 +129,7 @@ function createSch() {
   new_sch.append(sch_hr);
 
   showPannel(false)
-  document.getElementById('new_sch').append(sch_div);
+  document.getElementById('sch_div').append(new_sch);
 
   m_vl1.style.setProperty('left', parseInt(time.clientWidth + 1 ,10) + 38 + 'px');
   name_i.style.setProperty('left', parseInt(time.clientWidth + 1 ,10) + 54 + 'px');
