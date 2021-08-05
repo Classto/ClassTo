@@ -25,6 +25,8 @@ window.onload = () => {
     window.scrollBy(0, 270 + plus_pos);
   });
 
+  window.addEventListener('resize', resizeHandler);
+
   document.getElementById('add_pnl_type_input').addEventListener('change', (event) => {
     if (event.target.value === 'link') {
       document.getElementById('add_pnl_id').style.setProperty('visibility', 'hidden');
@@ -65,6 +67,7 @@ function changeIcon() {
 function createSch() {
   var new_sch = document.createElement('div');
   new_sch.style.top = plus_pos + 'px';
+  new_sch.className = 'schedule'
 
   var sch_title = document.createElement('h1');
   if (document.getElementById('add_pnl_title_input').value !== '') {
@@ -158,5 +161,8 @@ function showPannel(bool) {
 }
 
 function resizeHandler(event) {
-  console.log(event)
+  const schedules = document.getElementsByClassName('schedule');
+  for (let sch_num = 0; sch_num < schedules.length; sch_num++) {
+    console.log(schedules.item(sch_num))
+  }
 }
