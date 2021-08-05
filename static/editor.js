@@ -163,6 +163,9 @@ function showPannel(bool) {
 function resizeHandler(event) {
   const schedules = document.getElementsByClassName('schedule');
   for (let sch_num = 0; sch_num < schedules.length; sch_num++) {
-    console.log(schedules.item(sch_num))
+    let schedule_title = schedules.item(sch_num).getElementsByTagName('h1').item(0)
+    if (schedule_title.offsetWidth >= schedules.item(sch_num).clientWidth - 115) {
+      schedule_title.innerText = schedule_title.innerText.slice(0, -6) + '...'
+    }
   }
 }
