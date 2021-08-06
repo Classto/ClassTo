@@ -65,9 +65,8 @@ function createSch() {
   var sch_title = document.createElement('h1');
   if (document.getElementById('add_pnl_title_input').value !== '') {
     sch_title.innerText = document.getElementById('add_pnl_title_input').value;
-  }
-  else {
-    sch_title.innerText = 'Classto Schedule';
+  } else {
+    sch_title.innerText = 'A Schedule';
   }
 
   var t_vl1 = document.createElement('div');
@@ -142,7 +141,7 @@ function openPnl() {
   document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'hidden');
 }
 
-//open or close schedule pannel
+//open or close schedule panel
 function showPannel(bool) {
   if (bool) {
     document.getElementById('add_pnl_link').style.setProperty('visibility', 'hidden');
