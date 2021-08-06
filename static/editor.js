@@ -54,16 +54,6 @@ window.onload = () => {
   });
 }
 
-function changeIcon() {
-  let icon = document.getElementById('m_get_bell_icon');
-    
-  if (icon.className === 'far fa-bell') {
-    icon.className = 'far fa-bell-slash';
-  } else {
-    icon.className = 'far fa-bell';
-  }
-}
-
 function createSch() {
   var new_sch = document.createElement('div');
   new_sch.style.top = plus_pos + 'px';
