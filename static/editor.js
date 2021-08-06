@@ -4,6 +4,8 @@ let sch_count = 0;
 showPannel(false);
 
 window.onload = () => {
+  // create saved schedule 
+  //
   // let interval = setInterval(() => {
   //   sch_count++;
   //   createSch();
@@ -54,6 +56,7 @@ window.onload = () => {
   });
 }
 
+//create schedule
 function createSch() {
   var new_sch = document.createElement('div');
   new_sch.style.top = plus_pos + 'px';
@@ -139,6 +142,7 @@ function openPnl() {
   document.getElementById('add_pnl_link_input').style.setProperty('visibility', 'hidden');
 }
 
+//open or close schedule pannel
 function showPannel(bool) {
   if (bool) {
     document.getElementById('add_pnl_link').style.setProperty('visibility', 'hidden');
@@ -150,6 +154,7 @@ function showPannel(bool) {
   }
 }
 
+//h1 tag of schedule's width limit
 function resizeHandler(event) {
   const schedules = document.getElementsByClassName('schedule');
   for (let sch_num = 0; sch_num < schedules.length; sch_num++) {
