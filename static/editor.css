@@ -586,6 +586,14 @@ label, label > input {
     transition: border 100ms linear;
 }
 
+#add_pnl_day_input > button {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    background-color: white;
+    border: #e7ebf0 solid 1.5px;
+}
+
 #add_pnl_nickname {
     position: absolute;
     margin-top: 20%;
