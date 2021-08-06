@@ -13,13 +13,13 @@ window.onload = () => {
   // }, 150);
 
   document.getElementById('add_btn').addEventListener('click', () => {
-    document.getElementById('add_btn').style.setProperty('opacity', '0');
+    document.getElementById('add_btn').style.setProperty('display', 'none');
 
     showPannel(true);
   });
 
   document.getElementById('add_pnl_btn').addEventListener('click', () => {
-    document.getElementById('add_btn').style.setProperty('opacity', '1');
+    document.getElementById('add_btn').style.setProperty('display', 'block');
       
     createSch();
     window.scrollBy(0, 270 + plus_pos);
@@ -48,7 +48,7 @@ window.onload = () => {
   });
 
   document.getElementById('add_pnl_header_i').addEventListener('click', () => {
-    document.getElementById('add_btn').style.setProperty('opacity', '1');
+    document.getElementById('add_btn').style.setProperty('display', 'block');
 
     showPannel(false);
   });
