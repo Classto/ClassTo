@@ -586,12 +586,22 @@ label, label > input {
     transition: border 100ms linear;
 }
 
-#add_pnl_day_input > button {
-    height: 30px;
-    width: 30px;
+#add_pnl_day_input > div {
+    height: 24px;
+    width: 35px;
     border-radius: 4px;
     background-color: white;
     border: #e7ebf0 solid 1.5px;
+    margin-right: 9.95px;
+    cursor: pointer;
+}
+
+#add_pnl_day_input > div > span {
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #4a4c53;
 }
 
 #add_pnl_nickname {
@@ -735,7 +745,7 @@ label, label > input {
 #add_pnl_pw {
     position: absolute;
     margin-top: 30%;
-    left: 73.5%;
+    left: 73%;
 
     font-family: 'Heebo', sans-serif;
     font-style: normal;
@@ -749,7 +759,7 @@ label, label > input {
 #add_pnl_pw_input {
     position: absolute;
     top: 73.65%;
-    left: 73.5%;
+    left: 73%;
 
     width: 150px;
     color: #327DFF;
@@ -771,7 +781,7 @@ label, label > input {
     top: 73.65%;
     left: 55%;
 
-    width: 325px;
+    width: 318px;
     color: #327DFF;
     font-family: 'Heebo', sans-serif;
     font-style: normal;
